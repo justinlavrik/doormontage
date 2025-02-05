@@ -2,9 +2,9 @@
   display: none !important;
 }
 
-.gallery-section {
+/* .gallery-section {
   display: none !important;
-}
+} */
 
 /* Основной шрифт Roboto (подключение в index.html), применяем к body */
 body {
@@ -51,9 +51,9 @@ a {
   color: inherit;
 }
 
-section {
-  /* margin-bottom: 100px; */
-}
+/* section {
+  margin-bottom: 100px;
+} */
 
 /* Общие стили для секций на всю ширину */
 header,
@@ -80,7 +80,6 @@ header {
   /* Тень для отделения шапки */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  margin-bottom: 25px;
 }
 
 .header-content {
@@ -210,7 +209,9 @@ header {
 /* ГАЛЕРЕЯ */
 .gallery-section {
   background-color: #f0f0f0;
-  padding: 20px 0;
+  padding: 20px 0 50px 0;
+  box-shadow: 0 4px 29px rgba(0, 0, 0, 0.07);
+  position: relative;
 }
 
 .gallery-section h2 {
@@ -271,7 +272,8 @@ header {
 /* СЕКЦИЯ ЦЕН */
 .pricing-section {
   background-color: #e8f5e9; /* Светло-зеленый тон */
-  padding-bottom: 25px;
+  padding-bottom: 70px;
+  padding-top: 30px;
 }
 
 .pricing-section h2 {

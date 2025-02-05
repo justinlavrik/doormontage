@@ -80,6 +80,7 @@ header {
   /* Тень для отделения шапки */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  margin-bottom: 15px;
 }
 
 .header-content {
@@ -209,8 +210,8 @@ header {
 /* ГАЛЕРЕЯ */
 .gallery-section {
   background-color: #f0f0f0;
-  padding: 20px 0 50px 0;
-  box-shadow: 0 4px 29px rgba(0, 0, 0, 0.07);
+  padding-bottom: 80px;
+  box-shadow: 0 20px 100px rgba(0, 0, 0, 0.06);
   position: relative;
 }
 
@@ -273,7 +274,7 @@ header {
 .pricing-section {
   background-color: #e8f5e9; /* Светло-зеленый тон */
   padding-bottom: 70px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .pricing-section h2 {

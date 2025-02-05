@@ -210,8 +210,9 @@ header {
 /* ГАЛЕРЕЯ */
 .gallery-section {
   background-color: #f0f0f0;
-  padding-bottom: 80px;
-  box-shadow: 0 20px 100px rgba(0, 0, 0, 0.06);
+  padding-bottom: 30px;
+  margin-top: 10px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
   position: relative;
 }
 
@@ -274,7 +275,7 @@ header {
 .pricing-section {
   background-color: #e8f5e9; /* Светло-зеленый тон */
   padding-bottom: 70px;
-  padding-top: 50px;
+  padding-top: 115px;
 }
 
 .pricing-section h2 {

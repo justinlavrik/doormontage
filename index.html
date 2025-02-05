@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tür-Installation – Visitenkarte</title>
+  
+  <!-- Подключение Google Fonts (пример с Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Подключение актуальной версии Font Awesome (для иконок) -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  crossorigin="anonymous"
+  />
+
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта (Header) -->
+  <header>
+    <div class="container header-content">
+      <div class="logo-and-title">
+        <!-- Место для логотипа -->
+        <div class="logo">
+          <img src="media/logo.png" alt="Firmenlogo">
+        </div>
+        <h1 class="company-name">Doormontage</h1>
+      </div>
+
+      <!-- Блок с контактами справа -->
+      <div class="header-right-blocks">
+        <!-- Блок для "Напишите нам" -->
+        <div class="header-messages">
+          <p>Schreiben Sie uns:</p>
+          <div class="header-messengers">
+            <!-- WhatsApp -->
+            <a 
+              href="https://wa.me/4915906344944?text=Guten Tag. Ich möchte eine Türmontage bestellen." 
+              target="_blank" 
+              class="header-messenger-icon" 
+              aria-label="WhatsApp Chat"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <span class="messenger-owner">Alexandr</span>
+          </div>
+          <div class="header-messengers">
+            <!-- Telegram -->
+            <a 
+              href="https://t.me/+4917657905586" 
+              target="_blank" 
+              class="header-messenger-icon" 
+              aria-label="Telegram Chat"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <span class="messenger-owner">Lena</span>
+          </div>
+        </div>
+
+        <div class="header-contacts">
+          <p>Rufen Sie uns an:</p>
+          <a href="tel:+4917657940672" class="header-phone">+49 176 5794 0672</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основной блок: Описание услуги -->
+  <section class="service-section">
+    <div class="container">
+      <h2>Professionelle Türmontage und Reparatur &nbsp;&nbsp;–&nbsp;&nbsp;
+        <span class="thin-text">
+          schnell, präzise, zuverlässig
+        </span>
+      </h2>
+      <br>
+      <p>
+        Suchen Sie einen Fachmann, der Ihre Tür perfekt einbaut? Ich bin ein erfahrener Handwerker mit jahrelanger Praxis und biete alle Dienstleistungen rund um Türen an:
+      </p>
+
+      <ul class="service-list">
+        <li><i class="fa-solid fa-check"></i> Montage von Haus- und Innentüren</li>
+        <li><i class="fa-solid fa-check"></i> Reparatur und Wartung von Türen</li>
+        <li><i class="fa-solid fa-check"></i> Anpassung und Einbau von Türrahmen</li>
+        <li><i class="fa-solid fa-check"></i> Professionelle Beratung und Planung</li>
+        <li><i class="fa-solid fa-check"></i> Schnelle und saubere Ausführung</li>
+      </ul>
+      
+      <br>
+
+      <p>
+        Ich arbeite sorgfältig, halte Termine ein und garantiere eine hochwertige Ausführung. Egal ob neue Türinstallation oder Reparatur einer bestehenden – ich erledige die Arbeit professionell und mit höchster Präzision.
+      </p>
+      <p>
+        Kontaktieren Sie mich und überzeugen Sie sich von meiner Qualität!
+      </p>
+    </div>
+  </section>
+  <br>
+
+  <!-- Галерея (карусель изображений) -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Unsere Arbeiten</h2>
+      <div class="gallery-container">
+        <!-- Стрелка влево -->
+        <div class="arrow arrow-left" id="prevImage">&#10094;</div>
+        
+        <!-- Слайд с изображениями -->
+        <div class="gallery-slide">
+          <!-- Пример заглушек -->
+          <img 
+            src="media/portfolio_gallery/gallery1.jpg" 
+            alt="Galerie Bild 1" 
+            class="gallery-image active"
+          >
+          <img 
+            src="media/portfolio_gallery/gallery2.jpg" 
+            alt="Galerie Bild 2" 
+            class="gallery-image"
+          >
+          <img 
+            src="media/portfolio_gallery/gallery3.jpg" 
+            alt="Galerie Bild 3" 
+            class="gallery-image"
+          >
+        </div>
+        
+        <!-- Стрелка вправо -->
+        <div class="arrow arrow-right" id="nextImage">&#10095;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция с примерными ценами и кнопкой для просмотра PDF (Перенесена ниже галереи) -->
+  <section class="pricing-section">
+    <div class="container">
+      <h2>Preise & Leistungen</h2>
+      
+      <p>
+        Wir bieten professionelle Tür-Installationen zu fairen Konditionen. 
+        Nutzen Sie unsere langjährige Erfahrung und überzeugen Sie sich selbst.
+      </p>
+      <p>
+        Wir sind in Leipzig +50km tätig. Innerhalb von Leipzig ist die Anfahrt kostenlos; 
+        außerhalb berechnen wir eine zusätzliche Gebühr für die Anfahrt.
+      </p>
+      <br>
+      <!-- Зелёная кнопка для просмотра PDF -->
+      <a href="Preisliste.pdf" target="_blank" class="price-button">Preise ansehen</a>
+    </div>
+  </section>
+
+  <!-- Блок с отзывами (карусель отзывов) -->
+  <section class="reviews-section">
+    <div class="container">
+      <h2>Kundenbewertungen</h2>
+      <div class="reviews-container">
+        <!-- Стрелка влево -->
+        <div class="arrow arrow-left review-arrow" id="prevReview">&#10094;</div>
+        
+        <div class="review-slide" id="reviewSlide">
+          <!-- Отзыв 1 -->
+          <div class="review-item">
+            <img 
+              src="https://via.placeholder.com/80?text=Anna" 
+              alt="Kunde 1" 
+              class="review-photo"
+            >
+            <h3 class="review-name">Anna Müller</h3>
+            <p class="review-text">
+              “Schneller Einbau und top Qualität! Ich bin sehr zufrieden.”
+            </p>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          
+          <!-- Отзыв 2 -->
+          <div class="review-item">
+            <img 
+              src="https://via.placeholder.com/80?text=Thomas" 
+              alt="Kunde 2" 
+              class="review-photo"
+            >
+            <h3 class="review-name">Thomas Schmidt</h3>
+            <p class="review-text">
+              “Professionell, pünktlich und super freundlich. Gerne wieder!”
+            </p>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          
+          <!-- Отзыв 3 -->
+          <div class="review-item">
+            <img 
+              src="https://via.placeholder.com/80?text=Julia" 
+              alt="Kunde 3" 
+              class="review-photo"
+            >
+            <h3 class="review-name">Julia Braun</h3>
+            <p class="review-text">
+              “Preis-Leistung stimmt, schnelle Abwicklung, toller Service!”
+            </p>
+            <div class="review-stars">★★★★☆</div>
+          </div>
+
+          <!-- Можно добавить больше отзывов при необходимости -->
+        </div>
+        
+        <!-- Стрелка вправо -->
+        <div class="arrow arrow-right review-arrow" id="nextReview">&#10095;</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал сайта (Footer) -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Kontakt</h3>
+        <p>Telefon:</p>
+        <ul class="footer-phones">
+          <li><a href="tel:+4917657940672">+49 176 5794 0672</a><i>&mdash;</i><i>Justin</i></li>
+        </ul>
+        <p>Email: 
+          <a href="mailto:doormontage.de@gmail.com" class="email-link">
+            doormontage.de@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Messenger</h3>
+        <div class="footer-messengers">
+          <div class="footer-messenger-item">
+            <a href="https://wa.me/4915906344944?text=Guten Tag. Ich möchte eine Türmontage bestellen." target="_blank" class="messenger-link">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <span class="messenger-owner">Alexandr</span>
+          </div>
+          <div class="footer-messenger-item">
+            <a href="https://t.me/+4917657905586" target="_blank" class="messenger-link">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <span class="messenger-owner">Lena</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключаем JS для каруселей -->
+  <script src="script.js"></script>
+</body>
+</html>

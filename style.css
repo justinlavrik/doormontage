@@ -1,0 +1,449 @@
+.reviews-section {
+  display: none !important;
+}
+
+.gallery-section {
+  display: none !important;
+}
+
+/* Основной шрифт Roboto (подключение в index.html), применяем к body */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Сбрасываем базовые отступы у всех элементов */
+* {
+  box-sizing: border-box;
+}
+
+/* Заголовки, параграфы и т.д. */
+h1, h2, h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.thin-text {
+  /* font-variant: small-caps; */
+  font-weight: 300;
+  color: inherit;
+}
+
+/* Ссылки */
+a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+section {
+  /* margin-bottom: 100px; */
+}
+
+/* Общие стили для секций на всю ширину */
+header,
+.service-section,
+.gallery-section,
+.pricing-section,
+.reviews-section,
+footer {
+  width: 100%;
+}
+
+/* Контейнер для ограничения контента по ширине */
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ШАПКА */
+header {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  /* Тень для отделения шапки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-placeholder {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.logo img {
+  height: 80px; /* Высота логотипа */
+  width: auto; /* Автоматическая ширина */
+  max-width: 100%; /* Не выходить за границы */
+  object-fit: contain; /* Корректное отображение */
+  margin-right: 20px;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.header-right-blocks {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.header-contacts,
+.header-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-contacts p,
+.header-messages p {
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
+
+.header-phone {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.header-messengers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header-messenger-icon {
+  font-size: 1.6rem;
+  color: #333;
+  margin-right: 8px;
+}
+
+.header-messengers .messenger-owner {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* СЕКЦИЯ УСЛУГ */
+.service-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.service-list {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center; /* Выравниваем текст и иконку по центру */
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px; /* Отступ между пунктами */
+}
+
+.service-list i {
+  color: #4CAF50; /* Цвет галочки (зелёный) */
+  font-size: 1.2rem;
+  margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+
+/* ГАЛЕРЕЯ */
+.gallery-section {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-image.active {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px 10px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* СЕКЦИЯ ЦЕН */
+.pricing-section {
+  background-color: #e8f5e9; /* Светло-зеленый тон */
+  padding-bottom: 25px;
+}
+
+.pricing-section h2 {
+  margin-bottom: 30px;
+}
+
+.price-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.price-button:hover {
+  background-color: #43a047;
+}
+
+/* ОТЗЫВЫ */
+.reviews-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Контейнер для всех отзывов (горизонтальная карусель) */
+.review-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* Ширина и позиция изменяются в JS */
+}
+
+.review-item {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.review-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.review-name {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+.review-stars {
+  color: #f39c12;
+}
+
+.review-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ПОДВАЛ */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 35px 0 60px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-phones {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-phones li {
+  margin-bottom: 5px;
+}
+
+/* Телефонные ссылки в подвале */
+.footer-phones li a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-phones i {
+  margin-left: 10px;
+}
+
+/* Email, чтобы был виден на темном фоне */
+.email-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Мессенджеры в подвале */
+
+
+
+.footer-messengers {
+  display: flex;
+  flex-direction: column; /* Размещает мессенджеры в столбик */
+  gap: 10px; /* Отступ между строками */
+}
+
+.footer-messenger-item {
+  display: flex;
+  align-items: center; /* Выравнивает иконку и имя по вертикали */
+  gap: 8px; /* Отступ между иконкой и именем */
+}
+
+.messenger-link {
+  font-size: 1.8rem; /* Размер иконки */
+  color: #fff; /* Белый цвет иконок */
+  transition: color 0.3s;
+}
+
+.messenger-link:hover {
+  color: #ddd; /* Подсветка при наведении */
+}
+
+.footer-messengers .messenger-owner {
+  font-size: 1rem;
+  color: #fff; /* Белый текст */
+}
+
+
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .header-right-blocks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gallery-slide {
+    height: auto;
+  }
+  .gallery-image {
+    position: static;
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  .gallery-image.active {
+    display: block;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -47,7 +47,7 @@ p {
 
 /* Ссылки */
 a {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: inherit;
 }
 
@@ -113,8 +113,23 @@ header {
   margin-right: 20px;
 }
 
-.company-name {
-  margin: 0;
+.title-wrap {
+  text-align: start; /* Выравниваем название и локацию по началу */
+}
+
+.site-title {
+  font-size: 32px;  /* Размер основного названия сайта */
+  font-weight: 700; /* Жирный текст */
+  margin-bottom: 0px; /* Убираем лишние отступы */
+  margin-top: 10px;
+}
+
+.site-location {
+  font-size: 18px;  /* Чуть меньше, чем название сайта */
+  font-weight: 300; /* Менее жирный (тонкий) шрифт */
+  color: #666; /* Серый цвет для менее заметного вида */
+  display: block; /* Переносит текст на новую строку */
+  margin-top: 5px; /* Отступ сверху, чтобы не было слишком близко */
 }
 
 .header-right-blocks {
@@ -134,6 +149,10 @@ header {
 .header-messages p {
   margin: 0 0 5px 0;
   font-weight: 500;
+}
+
+.header-contacts a {
+  text-decoration: underline;
 }
 
 .header-phone {

@@ -212,7 +212,7 @@ header {
   background-color: #f0f0f0;
   padding-bottom: 30px;
   margin-top: 10px;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.06);
   position: relative;
 }
 
@@ -274,8 +274,8 @@ header {
 /* СЕКЦИЯ ЦЕН */
 .pricing-section {
   background-color: #e8f5e9; /* Светло-зеленый тон */
-  padding-bottom: 70px;
-  padding-top: 115px;
+  padding-bottom: 55px;
+  padding-top: 25px;
 }
 
 .pricing-section h2 {

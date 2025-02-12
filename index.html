@@ -6,11 +6,22 @@
   <title>DoorMontage | Professionelle Türmontage in Leipzig</title>
   <link rel="icon" href="media/favicon.ico" type="image/x-icon">
   <link rel="icon" href="media/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
   
   <!-- Google Fonts (2 шрифта для примера) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBDY599KF3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VBDY599KF3');
+  </script>
 </head>
 <body>
   
@@ -31,14 +42,14 @@
       </p>
       <div class="hero-cta-buttons">
         <!-- CTA Button WhatsApp -->
-        <a class="cta-button"
+        <a class="cta-button whatsapp"
            href="https://wa.me/4915906344944?text=Guten Tag. Ich möchte eine Türmontage bestellen."
            target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
           WhatsApp
         </a>
         <!-- CTA Button Telegram -->
-        <a class="cta-button"
+        <a class="cta-button telegram"
            href="https://t.me/+4917657905586"
            target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
@@ -208,5 +219,63 @@
   </footer>
   
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Whatsapp кнопка
+      document.querySelectorAll(".cta-button.whatsapp").forEach(button => {
+        button.addEventListener("click", function() {
+          gtag("event", "click", {
+            event_category: "Contact",
+            event_label: "Whatsapp Click",
+            value: 1
+          });
+        });
+      });
+
+      // Telegram кнопка
+      document.querySelectorAll(".cta-button.telegram").forEach(button => {
+        button.addEventListener("click", function() {
+          gtag("event", "click", {
+            event_category: "Contact",
+            event_label: "Telegram Click",
+            value: 1
+          });
+        });
+      });
+
+      // WhatsApp кнопка
+      document.querySelectorAll(".contact-btn.whatsapp").forEach(button => {
+        button.addEventListener("click", function() {
+          gtag("event", "click", {
+            event_category: "Contact",
+            event_label: "WhatsApp Click",
+            value: 1
+          });
+        });
+      });
+  
+      // Telegram кнопка
+      document.querySelectorAll(".contact-btn.telegram").forEach(button => {
+        button.addEventListener("click", function() {
+          gtag("event", "click", {
+            event_category: "Contact",
+            event_label: "Telegram Click",
+            value: 1
+          });
+        });
+      });
+  
+      // Телефонная кнопка
+      document.querySelectorAll(".contact-btn.phone").forEach(button => {
+        button.addEventListener("click", function() {
+          gtag("event", "click", {
+            event_category: "Contact",
+            event_label: "Phone Call",
+            value: 1
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>

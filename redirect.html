@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danke für Ihre Anfrage!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+    <script>
+        // Получаем параметр из URL
+        function getParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Определяем, куда перенаправить пользователя
+        function redirect() {
+            const action = getParam("type");
+
+            let url = "";
+            if (action === "1") {
+                url = "https://wa.me/4915906344944?text=Guten Tag. Ich möchte eine Türmontage bestellen.";
+            } else if (action === "2") {
+                url = "https://t.me/+4917657905586";
+            } else if (action === "3") {
+                url = "tel:+4917657940672";
+            }
+
+            if (url) {
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 500); // Задержка 0.5 секунды для фиксации конверсии
+            }
+        }
+
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <h1>Danke, dass Sie uns kontaktiert haben!</h1>
+    <p>Sie werden in Kürze weitergeleitet...</p>
+</body>
+</html>

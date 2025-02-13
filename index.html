@@ -51,14 +51,14 @@
       </p>
       <div class="hero-cta-buttons">
         <!-- CTA Button WhatsApp -->
-        <a class="cta-button whatsapp"
+        <a class="cta-button whatsapp_cta"
            href="https://wa.me/4915906344944?text=Guten Tag. Ich möchte eine Türmontage bestellen."
            target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
           WhatsApp
         </a>
         <!-- CTA Button Telegram -->
-        <a class="cta-button telegram"
+        <a class="cta-button telegram_cta"
            href="https://t.me/+4917657905586"
            target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
@@ -233,22 +233,22 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Whatsapp кнопка
-      document.querySelectorAll(".cta-button.whatsapp").forEach(button => {
+      document.querySelectorAll(".cta-button.whatsapp_cta").forEach(button => {
         button.addEventListener("click", function() {
           gtag("event", "click", {
             event_category: "Contact",
-            event_label: "Whatsapp Click",
+            event_name: "whatsapp_click",
             value: 1
           });
         });
       });
 
       // Telegram кнопка
-      document.querySelectorAll(".cta-button.telegram").forEach(button => {
+      document.querySelectorAll(".cta-button.telegram_cta").forEach(button => {
         button.addEventListener("click", function() {
           gtag("event", "click", {
             event_category: "Contact",
-            event_label: "Telegram Click",
+            event_name: "telegram_click",
             value: 1
           });
         });
@@ -259,7 +259,7 @@
         button.addEventListener("click", function() {
           gtag("event", "click", {
             event_category: "Contact",
-            event_label: "WhatsApp Click",
+            event_name: "whatsapp_click",
             value: 1
           });
         });
@@ -270,7 +270,7 @@
         button.addEventListener("click", function() {
           gtag("event", "click", {
             event_category: "Contact",
-            event_label: "Telegram Click",
+            event_name: "telegram_click",
             value: 1
           });
         });
@@ -281,7 +281,7 @@
         button.addEventListener("click", function() {
           gtag("event", "click", {
             event_category: "Contact",
-            event_label: "Phone Call",
+            event_name: "phone_call",
             value: 1
           });
         });
